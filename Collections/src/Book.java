@@ -27,7 +27,8 @@ public class Book {
         bookCollection.remove(book);
     }
     public static void getBooks(){
-        bookCollection.forEach(s -> System.out.println( "Author: "+ s.author + " IBSN: " + s.ibsn + " Title: " + s.title));
+        bookCollection.forEach(s -> System.out.println( "Author: "+ s.author +
+                " IBSN: " + s.ibsn + " Title: " + s.title));
     }
 
 }
