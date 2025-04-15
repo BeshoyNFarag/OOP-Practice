@@ -8,8 +8,12 @@ area and perimeter, and subclasses for "Rectangle", "Circle", and "Triangle".
 abstract public class Shape {
 
 
-    public double area();
-    public double perimeter();
+    public abstract double area(double base , double height);
+    public abstract double perimeter(double base , double height);
+    public abstract double traingleParameter(double side1, double side2, double side3);
+    public abstract double circleArea(double radius);
+    public abstract double circlePerimeter(double radius);
+
 
 
 }

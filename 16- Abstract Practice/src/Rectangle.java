@@ -4,17 +4,33 @@ area and perimeter, and subclasses for "Rectangle", "Circle", and "Triangle".
 */
 
 
-public class Rectangle {
-    private double length;
-    private double width;
+import javax.print.attribute.UnmodifiableSetException;
 
-    public double area(double length, double width) {
+public class Rectangle extends Shape {
+    private double base;
+    private double height;
 
+    public double area(double base , double height){
+
+        return base*height;
+    }
+
+
+    public double perimeter(double base , double height){
+
+        return 2 * (base + height);
 
     }
-    public double perimeter(double length, double width){
 
-
-
+    public double traingleParameter(double side1, double side2, double side3){
+         throw new UnmodifiableSetException("Not applicable for this shape");
     }
+    public double circleArea(double radius){
+        throw new UnmodifiableSetException("Not applicable for this shape");
+    }
+    public double circlePerimeter(double radius){
+        throw new UnmodifiableSetException("Not applicable for this shape");
+    }
+
 }
+
