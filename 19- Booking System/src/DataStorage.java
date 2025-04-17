@@ -7,8 +7,11 @@ import java.util.ArrayList;
 
 public class DataStorage {
 
-    ArrayList<String> hotels = new ArrayList<String>();
-    ArrayList<String> flights = new ArrayList<String>();
+
+    ArrayList<String> hotels = new ArrayList<>();
+    ArrayList<String> flights = new ArrayList<>();
+    ArrayList<String> hotelCart = new ArrayList<>();
+    ArrayList<String> flightCart = new ArrayList<>();
 
   public void addHotel(String hotel){
       hotels.add(hotel);
@@ -18,7 +21,6 @@ public class DataStorage {
   public void addFlight(String flight){
       flights.add(flight);
   }
-
 
 
 }
