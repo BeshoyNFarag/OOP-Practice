@@ -6,6 +6,23 @@ Create a subclass "LoyalCustomer" that adds a discount rate attribute and a meth
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Costumer costumer = new Costumer();
+        LoyalCostumer loyalCostumer = new LoyalCostumer();
+        Purchase<String, Double> purhcase1 = new Purchase<>("Coke", 4.5);
+        Purchase<String, Double> purhcase2 = new Purchase<>("Pepsi", 5);
+
+        costumer.addPurchase(purhcase1);
+        costumer.addPurchase(purhcase2);
+        costumer.getPurchases();
+        costumer.getTotalAmount();
+
+
+        loyalCostumer.addPurchase(purhcase1);
+        loyalCostumer.addPurchase(purhcase2);
+        loyalCostumer.discount(12.5f);
+
+
+
+
     }
 }
