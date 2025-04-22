@@ -12,11 +12,9 @@ public class Main {
         dog.getDetails();
         System.out.println();
         System.out.println();
-
         Bird bird = new Bird("Shiko", 2 , "Cocktail", 20);
         bird.petAgeHuman();
         bird.getDetails();
-
 
     }
 }
